@@ -4,6 +4,9 @@
   background-color: var(--littledarkpink);
   color: var(--whitepink);
   padding: 5px 5px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .status-bar__column {
@@ -23,4 +26,8 @@
 
 .status-bar__column .fa-battery-three-quarters {
   margin: 0px 5px;
+}
+
+.status-bar__column .fa-bolt {
+  margin-right: 8px;
 }

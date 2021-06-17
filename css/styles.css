@@ -4,13 +4,15 @@
 
 /* components */
 @import url("components/status-bar.css");
+@import url("components/nav-bar.css");
 
 /* screens */
 @import url("screens/login.css");
 
 body {
   font-family: "Open Sans", sans-serif;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
+  /* height: 1000vh; */
 }
 
 body:not(.status-bar) {
