@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Love Talk</title>
+    <title>Friends Talk</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
@@ -25,6 +25,121 @@
       </div>
     </div>
 
+    <header class="screen-header">
+      <h1 class="screen-header__title">Loved ones</h1>
+      <div class="screen-header__icons">
+        <i class="fas fa-search fa-lg"></i>
+        <i class="far fa-kiss-beam fa-lg"></i>
+        <i class="fas fa-music fa-lg"></i>
+        <i class="fas fa-cog fa-lg"></i>
+      </div>
+    </header>
+
+    <a href="#" class="loves-display-link">
+      <i class="fab fa-gratipay"></i> Your loves Display
+      <i class="fas fa-chevron-right"></i>
+    </a>
+
+    <main class="firends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://cdn.pixabay.com/photo/2017/01/31/18/17/affection-2026171__340.png"
+            alt=""
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">In love</h4>
+            <!-- <h6 class="user-component__subtitle">~asdfdsf~</h6> -->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+
+      <div class="friends-screen__Channel">
+        <div class="friends-screen__Channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://cdn.pixabay.com/photo/2020/03/13/19/44/heart-4928970__340.png"
+              alt=""
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Channel
+              </h4>
+              <!-- <h6 class="user-component__subtitle">~asdfdsf~</h6> -->
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div>
+              <span>2</span>
+              <i class="fas fa-chevron-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="friends-screen__lovedOnes">
+        <div class="friends-screen__lovedOnes-header">
+          <span>Loved Ones 3</span>
+          <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/01/31/18/17/affection-2026171__340.png"
+              alt=""
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Lovers
+              </h4>
+              <!-- <h6 class="user-component__subtitle">~asdfdsf~</h6> -->
+            </div>
+          </div>
+          <div class="user-component__column"></div>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://cdn.pixabay.com/photo/2019/05/28/05/47/puppy-4234435_960_720.jpg"
+              alt=""
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Puppy
+              </h4>
+              <!-- <h6 class="user-component__subtitle">~asdfdsf~</h6> -->
+            </div>
+          </div>
+          <div class="user-component__column"></div>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://cdn.pixabay.com/photo/2018/08/19/01/33/poodle-3615894__340.jpg"
+              alt=""
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Doggie
+              </h4>
+              <!-- <h6 class="user-component__subtitle">~asdfdsf~</h6> -->
+            </div>
+          </div>
+          <div class="user-component__column"></div>
+        </div>
+      </div>
+    </main>
+
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
@@ -33,18 +148,40 @@
           ></a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="#"><i class="far fa-comment fa-2x"></i></a>
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">3</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="#"><i class="fas fa-search fa-2x"></i></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="#"
-            ><i class="fas fa-ellipsis-h fa-2x"></i
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
           ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__notification_dots point"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
         </li>
       </ul>
     </nav>
+
+    <div id="splash-screen">
+      <i class="fas fa-heart"></i>
+    </div>
+
+    <div id="no-mobile">
+      <div class="no-mobile-text1">
+        <span>Your screen</span>
+        <span>is too big 😭</span>
+      </div>
+      <div class="no-mobile-text2">
+        <span>Please reduce</span>
+        <span>the screen.</span=>
+      </div>
+    </div>
+
 
     <script
       src="https://kit.fontawesome.com/a64b08a787.js"

@@ -1,0 +1,37 @@
+.alt-header {
+  padding: var(--horizontal-space);
+  padding-top: 50px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alt-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.alt-header--column {
+  width: 33%;
+}
+
+.alt-header--column:first-child {
+  margin-right: auto;
+}
+
+.alt-header--column:last-child {
+  margin-left: auto;
+  /* justify-content: space-between 안쓰고 margin: auto 쓰는 이유 → 
+  space-between이 글자 수에 따라서 배열이 중앙 정열이 안됨, auto를 쓰면 글자 수와 무관하게 중앙 정열이 됨 */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alt-header--column:nth-child(2) {
+  text-align: center;
+}
+
+.alt-header--column i:last-child {
+  margin-left: 20px;
+}

@@ -1,0 +1,58 @@
+#no-mobile {
+  /* #splash screen과 매우 비슷 */
+  position: absolute;
+  background-color: var(--lightpink);
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  z-index: 1; /* splash나 friends스크린이 더이상 위로 올라오지 않게 , status-bar는 보이게*/
+}
+
+@media screen and (max-width: 645px) {
+  /* 645보다 작으면 #no-mobile(Your screen is too big) 보여주지 말아라 */
+  #no-mobile {
+    display: none;
+  }
+}
+
+.no-mobile-text1 {
+  margin-bottom: 30px;
+}
+
+.no-mobile-text1 span,
+.no-mobile-text2 span {
+  display: inline-block;
+  animation: moving-text 1s ease-in-out infinite;
+  animation-direction: alternate;
+  font-size: 40px;
+  text-shadow: 1px 1px 4px rgb(0, 0, 0, 0.5);
+}
+
+.no-mobile-text1 span:last-child {
+  animation-delay: 0.1s;
+}
+
+.no-mobile-text2 span:first-child {
+  animation-delay: 0.2s;
+}
+
+.no-mobile-text2 span:last-child {
+  animation-delay: 0.3s;
+}
+
+@keyframes moving-text {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: none;
+  }
+}

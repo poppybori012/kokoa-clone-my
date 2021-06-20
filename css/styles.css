@@ -5,16 +5,34 @@
 /* components */
 @import url("components/status-bar.css");
 @import url("components/nav-bar.css");
+@import url("components/screen-header.css");
+@import url("components/user-component.css");
+@import url("components/badge.css");
+@import url("components/point.css");
+@import url("components/icon-raw.css");
+@import url("components/alt-screen-header.css");
+@import url("components/no-mobile.css");
 
 /* screens */
 @import url("screens/login.css");
+@import url("screens/friends.css");
+@import url("screens/chats.css");
+@import url("screens/find.css");
+@import url("screens/more.css");
+@import url("screens/settings.css");
+@import url("screens/chat.css");
 
 body {
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
   /* height: 1000vh; */
+  color: var(--whitepink);
 }
 
 body:not(.status-bar) {
   background-color: var(--lightpink);
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }

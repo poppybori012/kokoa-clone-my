@@ -1,0 +1,80 @@
+.user-component__subtitle .fa-gratipay {
+  margin-left: 3px;
+  color: var(--littledarkpink);
+}
+
+.more-screen .icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 35px 0 40px 0;
+}
+
+.more-screen .icon-row__icon {
+  width: 25%;
+}
+
+.more-screen .icon-row .icon-row__icon:nth-child(5),
+.more-screen .icon-row .icon-row__icon:last-child {
+  margin-top: 35px;
+}
+
+.icon-row .arrnage-badge {
+  position: relative;
+}
+
+.icon-row .badge {
+  position: absolute;
+  top: -5px;
+  right: 33px;
+  width: 7px;
+  height: 7px;
+  opacity: 0.7;
+}
+
+.hand-between-heart__relative {
+  position: relative;
+}
+
+.fa-heart.hand-between-heart {
+  position: absolute;
+  font-size: 20px;
+  top: 8px;
+  right: -10px;
+  color: var(--littledarkpink);
+}
+
+.fa .more-suggestions {
+  border-top: var(--main-border);
+}
+
+.more-suggestions__title {
+  margin: 30px 0;
+}
+
+.more-suggestions__icons {
+  display: flex;
+}
+
+.more-suggestions__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.more-suggestions__icon-image {
+  width: 60px;
+  height: 60px;
+  background-color: var(--darkpink);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.more-suggestions__icon-image i {
+  font-size: 32px;
+}

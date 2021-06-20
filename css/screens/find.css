@@ -1,0 +1,128 @@
+.icon-row__icon:nth-child(2) span {
+  text-align: center;
+}
+
+.recommended-lovedOnes {
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+  margin: 25px 0;
+  padding: 25px 0;
+}
+
+.recommended-lovedOnes__title {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.recommended-lovedOnes span {
+  font-size: 18px;
+  margin: 100px 0;
+  display: block;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.open-chat__header span {
+  opacity: 0.6;
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-post__title {
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.open-post__hashtags {
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 7px;
+}
+
+.open-post__members {
+  display: flex;
+  align-items: center;
+}
+
+.open-post__members img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.open-post__member-count {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.divider {
+  width: 2px;
+  height: 10px;
+  background-color: rgba(255, 235, 238, 0.7);
+  margin: 0 5px;
+}
+
+.open-post__member-status {
+  color: var(--littledarkpink);
+}
+
+.open-post__photo {
+  position: relative;
+}
+
+.open-post__photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 8px;
+  right: 6px;
+  font-size: 12px;
+}
+
+.open-post__heart-count span {
+  margin-left: 3px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: var(--whitepink);
+    transform: none;
+  }
+  50% {
+    color: var(--darkpink);
+    transform: scale(1.5);
+    /* scale을 작은 숫자로 하면 사이즈 계산에 문제가 있어서 하트가 흔들림, scale을 크게 하거나 will-change 사용*/
+  }
+  100% {
+    color: var(--whitepink);
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  /* open-post__heart-count 어떤 부분에 올라가도 icon이 변한다 */
+  will-change: transform;
+  /* will-change는 애니메이션이 좀 더 부드럽게 동작할 수 있게 한다. → 브라우저에게 어떤 것이 변할 것인지 예고해주는 것, 그래픽 카드를 이용해서 애니메이션을 가속화 한다. */
+  animation: heartBeat 1s linear infinite;
+}
